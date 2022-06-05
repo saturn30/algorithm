@@ -1,4 +1,5 @@
 import { threeSum } from "./3sum";
+// import { threeSum } from "./3sum2";
 
 describe("15. 3Sum", () => {
   test("example 1", () => {
@@ -18,8 +19,8 @@ describe("15. 3Sum", () => {
 
   test("custom example 1", () => {
     expect(threeSum([-2, -3, -1, -4, 0, 5])).toEqual([
-      [-1, -4, 5],
-      [-2, -3, 5],
+      [-4, -1, 5],
+      [-3, -2, 5],
     ]);
   });
 

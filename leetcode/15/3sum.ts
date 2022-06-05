@@ -1,6 +1,6 @@
 // 첫 시도. 성공은 했는데 엄청 느리다.
 export function threeSum(nums: number[]): number[][] {
-  const combinations = getAllCombination(nums.sort());
+  const combinations = getAllCombination(nums.sort((a, b) => a - b));
 
   return combinations;
 }
@@ -60,7 +60,7 @@ function createCombination(nums: number[]) {
       if (num === 0) return 0;
       return num;
     })
-    .sort();
+    .sort((a, b) => a - b);
 }
 
 function isDuplicateCombination(combinations: number[][], target: number[]) {
