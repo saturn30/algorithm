@@ -28,3 +28,9 @@ export function maxArea(height: number[]): number {
 
   return maxArea;
 }
+
+/**
+ 탐욕법 문제. 양끝에서 시작해서 왼쪽 점의 높이가 오른쪽 점의 높이보다 크다면 
+ 오른쪽 점을 왼쪽으로 한칸, 반대면 왼쪽으로 오른쪽 점으로 한칸씩 옮기면서 영역 계산.
+ 투포인터 문제
+ */
